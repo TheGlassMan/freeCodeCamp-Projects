@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">
+            freeCodeCamp Surver Form
+        </h1>
+        <p id="description">
+            Let us know what you think about the platform :)
+        </p>
+        <form method="post" action="https://register-demo.freecodecamp.org" id="survey-form">
+            <!-- First three boxes for name, email, age -->
+            <fieldset>
+            <label for="name" id="name-label">Name</label><input id="name" type="text" placeholder="Enter your full name here" required>
+            <label for="email" id="email-label">Email</label><input id="email" type="email" placeholder="Enter your email here" required>
+            <label for="number" id="number-label">Age (optional)</label><input id="number" type="number" placeholder="Enter your age here" min="13" max="120">
+            </fieldset>
+            <!-- Dropdown menu for occupation -->
+            <fieldset>
+                <label for ="dropdown"> Which option best describes your current role?
+                    <select id="dropdown" class="block" required>
+                    <option value="">Select role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Educator</option>
+                    <option value="3">Employed Full Time</option>
+                    <option value="4">Prefer not to say</option>
+                    <option value="5">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset class="radio-options">
+                <legend>From a scale to 1 to 10 how likely are you to reccomend freeCodeCamp to a friend?</legend>
+                <label><input type="radio" required id="1" name="rate" value="1">1</label>
+                <label><input type="radio" required id="2" name="rate" value="2">2</label>
+                <label><input type="radio" required id="3" name="rate" value="3">3</label>
+                <label><input type="radio" required id="4" name="rate" value="4">4</label>
+                <label><input type="radio" required id="5" name="rate" value="5">5</label>
+                <label><input type="radio" required id="6" name="rate" value="6">6</label>
+                <label><input type="radio" required id="7" name="rate" value="7">7</label>
+                <label><input type="radio" required id="8" name="rate" value="8">8</label>
+                <label><input type="radio" required id="9" name="rate" value="9">9</label>
+                <label><input type="radio" required id="10" name="rate" value="10">10</label>
+                </fieldset>
+            <fieldset>
+                <legend>How did you hear about freeCodeCamp? (Optional)</legend>
+                <label ><input type="checkbox" class="inline" value="refferal">Youtube</label>
+                <label ><input type="checkbox" class="inline" value="refferal">Github</label>
+                <label ><input type="checkbox" class="inline" value="refferal">Educator</label>
+                <label ><input type="checkbox" class="inline" value="refferal">Instagram</label>
+                <label ><input type="checkbox" class="inline" value="refferal">Other Social Media</label>
+                </fieldset>
+            <fieldset>
+                <label>Tell us your thoughts about learning and what to add!
+                    <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I really liked..."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit" />
+            
+        </form>
+        
+    </body>
+</html>
